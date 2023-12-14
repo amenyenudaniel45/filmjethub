@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gray {
+  background-color: rgba(152, 151, 151, 0.28);
+}
+.card {
+  background: linear-gradient(
+    159deg,
+    rgba(90, 58, 54, 1) 4%,
+    rgba(18, 1, 83, 1) 86%
+  );
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-hero {
+  background-image: url(/cover.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.paddingNav {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.padding {
+  padding: 5rem 15%;
+}
+
+.transition {
+  transition: ease-in 300ms;
+}
+
+/* Slick
+autoplay={true}
+autoplaySpeed= 1000
+*/
+
+/* <iframe src="https://vidsrc.me/embed/tv?tmdb=1" style="width: 100%; height: 100%;" frameborder="0" referrerpolicy="origin" allowfullscreen></iframe> */
+
+@media screen and (max-width: 1200px) {
+  .padding {
+    padding: 5rem 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .padding {
+    padding: 5rem 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .paddingNav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .padding {
+    padding: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .paddingNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .padding {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .bg-hero {
+    height: 100%;
+    padding-bottom: 4rem;
+  }
+}
+
+.slide__bar::-webkit-scrollbar {
+  height: 10px;
+}
+.slide__bar::-webkit-scrollbar-track {
+  background-color: #414141;
+  border-radius: 2rem;
+}
+.slide__bar::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 2rem;
+}
+
+.gray-cast {
+  color: rgb(176, 172, 172);
+}
+
+.reviews {
+  background-color: rgba(40, 40, 40, 0.7);
+}
+
+.container__:hover .image__container {
+  opacity: 0.6;
+  transition: ease 0.6s;
+}
